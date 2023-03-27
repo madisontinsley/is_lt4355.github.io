@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!--
+Title: IS_LT 4355
+Use: ???
+Author: Madison Tinsley
+School/Term: University of Missouri Spring 2023
+Developed: Feb 5 2023
+Tested: Feb 5 2023
+-->
+
+           	<meta charset="utf-8">
+             <meta name="viewport" content="width=device-width, initial-scale=1">
+           	<title>Projects</title>
+            <link rel="stylesheet" href="style.css"/>
+          <link rel="stylesheet" href="project.css" />
+          <link rel="stylesheet" href="nav.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Madison Tinsley's Projects</h1>
+    <div id="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</header>
+<nav id="nav">
+    <script>
+        const hamburger = document.querySelector('#hamburger');
+const nav = document.querySelector('#nav');
+
+hamburger.addEventListener('click', () => {
+nav.classList.toggle('active');
+});
+    </script>
+    <ul>
+        <li><a href="About_Me.html">About</a></li>
+        <li><a href="Home_Page.html">Home</a></li>
+        <li><a href="reflection.html">Reflection</a></li>
+        <li class="tierone"><a href="project.html">Project</a>
+            <ul class="tiertwo">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<main class= "content">
+<ul>
+  <li>Music: Various videos of me singing throughout the years, but no more than 4
+  videos. Information on the songs and composers will be included. I have been in the ACDA National Honor Choir, multiple district choirs, 4
+  musicals, 1 opera, and other musical projects I will have small descriptions
+  for.</li>
+ <li>Art:
+  Art a replacement for music when I was not in a safe music environment. I
+  am not even a good artist, but it is a activity I enjoy to share with others, I
+  have a no more than 4 pictures of some, and some of the art I am inspired
+  by, as I am an art history nerd </li>
+  <li>Coding and programming:
+  This one I am still fleshing out, probably some links to projects, most of my
+  coding is done in python, but I know enough Java to “translate” some
+  products into the HTML.
+  I am also going to talk about my job at the ACT center, and website
+  accessibility.</li>
+
+</ul>
+</main>
+    <footer>
+        <p>© Madison Tinsley matcfr@umsystem.edu. All rights reserved.</p>
+      </footer>
+</body>
+</html>

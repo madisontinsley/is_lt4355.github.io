@@ -26,26 +26,20 @@ Tested: Feb 27 2023
             <div class="line"></div>
         </div>
     </header>
-    <nav id="nav">
-        <script>
-            const hamburger = document.querySelector('#hamburger');
-const nav = document.querySelector('#nav');
-
-hamburger.addEventListener('click', () => {
-   nav.classList.toggle('active');
-});
-        </script>
+      <nav>
+        <label id="hamburger">&#9776;</label>
         <ul>
-            <li><a href="About_Me.html">About</a></li>
-            <li><a href="Home_Page.html">Home</a></li>
-            <li><a href="reflection.html">Reflection</a></li>
-            <li class="tierone"><a href="project.html">Project</a>
-                <ul class="tiertwo">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="About_me.html">About</a></li>
+            <li><a href="project.html">Project</a>
+                <ul id="mobileHide">
+                    <li><a href="1.html">Music</a></li>
+                    <li><a href="2.html">Art</a></li>
+                    <li><a href="3.html">Code</a></li>
                 </ul>
             </li>
+            <li><a href="reflection.html">Reflection</a></li>
+            <li class="lastMobile"><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 

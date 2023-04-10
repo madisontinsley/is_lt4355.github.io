@@ -27,11 +27,6 @@
                 nav{
                   display: none;
                 }
-                body {
-                  font-size: 12pt;
-                  color:black;
-                  background-color: white;
-                }
                 
                 h1 {
                   font-size: 24pt;
@@ -43,10 +38,9 @@
                 }
               }
             footer {
-                background-image: url('https://wallpapers.com/images/featured/0liqoxvya28yh11d.jpg');
+                background-image: src= "/test.jpg";
                 background-repeat: no-repeat;
                 background-size: cover;
-                color: #fff;
                 padding: 20px;
                 text-align: center;
               }

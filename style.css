@@ -1,11 +1,5 @@
 
-.resumebox {
-    color: #3C3C3C;
-      width: 70px;
-      height: 70px;
-      text-align: center;
-  
-  }
+
   
   body{
     background-color: #c74a89 ;
@@ -16,7 +10,7 @@
     }
     
     main {
-        background-color: #f4e4d8;
+        background-color: #f2f1f1;
     }
 
     
@@ -35,7 +29,7 @@
             width: 200 px;
             height: 200 px;
         }
-        
+
         @media screen and (min-width: 760px) {
         img {
             max-width: 100%;
@@ -44,10 +38,9 @@
     }
 
     footer {
-        background-image: url('https://wallpapers.com/images/featured/0liqoxvya28yh11d.jpg');
+        background-image: url('/test.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        color: #fff;
         padding: 20px;
         text-align: center;
       }
@@ -82,8 +75,6 @@
                   }
                   body {
                     font-size: 12pt;
-                    color:black;
-                    background-color: white;
                   }
                   
                   h1 {
@@ -96,7 +87,7 @@
                   }
                 }
               footer {
-                  background-image: url('https://wallpapers.com/images/featured/0liqoxvya28yh11d.jpg');
+                  background-image: url('/test.jpg');
                   background-repeat: no-repeat;
                   background-size: cover;
                   color: #fff;

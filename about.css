@@ -37,12 +37,8 @@
                   margin: 5pt 0;
                 }
               }
-            footer {
-                background-image: src= "/test.jpg";
-                background-repeat: no-repeat;
-                background-size: cover;
-                padding: 20px;
-                text-align: center;
-              }
-            
-            
+.contentbox{
+    display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+}

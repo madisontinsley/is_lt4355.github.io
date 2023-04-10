@@ -14,6 +14,10 @@
     }
     h1 {color: #3E3E3E; text-align: center;
     }
+    
+    main {
+        background-color: #f4e4d8;
+    }
 
     
     h3 {color: #3E3E3E}
@@ -32,7 +36,32 @@
             text-align: left;
         }
     }
-    /* Grid layout in desktop view*/
+
+    footer {
+        background-image: url('https://wallpapers.com/images/featured/0liqoxvya28yh11d.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+    
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    .video-container iframe, .video-container object, .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 560px;
+        height:  313px;
+    }
+    
     @media screen and (max-width: 759px) {
             
         img {
@@ -69,3 +98,15 @@
                   text-align: center;
                 }
               
+                @media only screen and (max-width: 600px) {
+                    .video-container {
+                      padding-bottom: 56.25%;
+                      max-width: 100%;
+                    }
+                    .video-container iframe {
+                      width: 100%;
+                      height: auto;
+                    }
+                  }
+                  
+            

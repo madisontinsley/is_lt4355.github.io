@@ -7,23 +7,6 @@
 
 }
 
-body{
-  background-color: #96a893;
-  font-family: 'Merriweather', serif;
-  }
-  h1 {color: #3C3C3C text-align: center
-  }
-  
-  header {
-      display: inline;
-      vertical-align:center;
-      background-color: #945D60;
-      width: 100%;
-  }
-  
-  h3 {color: #3C3C3C}
-  h4 {color: #3C3C3C}
-
       blockquote {font-family: 'Merriweather', serif; }
   
   .hangingindent {
@@ -31,11 +14,7 @@ body{
       text-indent: -22px ;
       }
 
-      @media screen and (min-width: 760px) {
-      img {
-          max-width: 100%;
-          text-align: left;
-      }
+    
   @media screen and (max-width: 759px) {
           
       img {
@@ -72,4 +51,4 @@ body{
                 text-align: center;
               }
             
-            }
+            

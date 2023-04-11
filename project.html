@@ -45,13 +45,36 @@ Tested: Feb 5 2023
 </nav>
 <main class= "content">
   <h1 id="music">Music</h1>
+  <table>
+    <caption><h1>About the Songs</h1></caption>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><i>Romance</i></td>
+        <td><i>Claude Debussy</i></td>
+        <td>This song is whimsical and delicate. The lyrics are loving and sung to a lover.</td>
+      </tr>
+      <tr>
+        <td><i>L'ho Perduta</i></td>
+        <td><i>Wolfgang Amadeus Mozart</i></td>
+        <td>From the opera <i>Le Nozze di Figaro</i> the song is sung by the young Barbarina, who has lost a pin, a pin she was instructed to give to her cousin by the Count. </td>
+      </tr>
+      <tr>
+        <td>TBD</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
     <iframe id="video-container" width="560" height="315" src="https://www.youtube.com/embed/GnWQ7YVF4a8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <p><i>Romance</i> by Debussy.</p>
-    <p>This was recorded during my freshman year of college, and it remains one of my favorite vocal pieces.</p>
+  
     <iframe id="video-container" width="560" height="315" src="https://www.youtube.com/embed/KKMTnsyQOi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <p><i>L'ho perduta</i> from Mozart's <i>Le Nozze di Figaro</i></p>
-    <p>This was also recorded during my freshmen year, and I would go on to perform this role a year later, unfornuately I have no videos of that! The character I am playing is named <i>Barbarina</i>, a young girl, and she has lost a very important pin.</p>
-    <p>I have been training classically for about 8 years, and music has been my passsion for even longer. I major in Vocal Performance for two years at Pepperdine University, before quitting after my sophomore year.</p>
     <h1 id="art">Art</h1>
     <p>Art a replacement for music when I was not in a safe music environment. I
       am not even a good artist, but it is a activity I enjoy to share with others, I
@@ -59,12 +82,53 @@ Tested: Feb 5 2023
       by, as I am an art history nerd</p>
       <img id="artimg" src="/6E59387D-9FC0-438F-83C9-BD683ED402B6.jpg"/>
       <img id="artimg" src="/68935954000--598459EC-66F2-4D86-90E2-9FB6575B73C2.jpg"/>
+	
+<h1>Code</h1>
+<h1>Rock Paper Scissors Game</h1>
 
-      <h1 id="code">Code</h1>
-      <p>... A work in progress, as I am trying to have a window display some code but for now here is a link to a little website I made.</p>
-      <img src="/code.jpg.png"/>
+<div id="choices">
+	<button id="rock">Rock</button>
+	<button id="paper">Paper</button>
+	<button id="scissors">Scissors</button>
+</div>
 
-</ul>
+<div id="result"></div>
+<div id="computer-choice"></div>
+
+<script>
+	var choices = ['rock', 'paper', 'scissors'];
+	var resultElem = document.getElementById('result');
+	var computerChoiceElem = document.getElementById('computer-choice');
+	
+	document.getElementById('rock').addEventListener('click', function() {
+		playGame('rock');
+	});
+	
+	document.getElementById('paper').addEventListener('click', function() {
+		playGame('paper');
+	});
+	
+	document.getElementById('scissors').addEventListener('click', function() {
+		playGame('scissors');
+	});
+	
+	function playGame(userChoice) {
+		var computerChoice = choices[Math.floor(Math.random() * choices.length)];
+		computerChoiceElem.innerHTML = "Computer's choice: " + computerChoice;
+		
+		if (userChoice === computerChoice) {
+			resultElem.innerHTML = "It's a tie!";
+		} else if (userChoice === 'rock' && computerChoice === 'scissors' ||
+				   userChoice === 'paper' && computerChoice === 'rock' ||
+				   userChoice === 'scissors' && computerChoice === 'paper') {
+			resultElem.innerHTML = "You win!";
+		} else {
+			resultElem.innerHTML = "You lose!";
+		}
+	}
+</script>
+
+
 </main>
     <footer>
         <p>© Madison Tinsley matcfr@umsystem.edu. All rights reserved.</p>

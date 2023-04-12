@@ -5,6 +5,7 @@
     background-color: #c74a89 ;
     font-family: 'Merriweather', serif;
     color: #3E3E3E;
+    padding: 10px;
     }
     h1 {color: #3E3E3E; text-align: center;
     }
@@ -16,6 +17,9 @@
     
     h3 {color: #3E3E3E}
     h4 {color: #3E3E3E}
+    p {
+      padding: 10px;
+    }
   
         blockquote {font-family: 'Merriweather', serif; }
     
@@ -32,8 +36,9 @@
 
         @media screen and (min-width: 760px) {
         img {
-            max-width: 100%;
+            max-width: 80%;
             text-align: left;
+            size: ;
         }
     }
 

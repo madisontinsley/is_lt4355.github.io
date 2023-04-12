@@ -32,4 +32,18 @@
 			margin-top: 30px;
             margin-bottom: 30px;
         }
-        caption
+        
+		#rock {
+			background-image: url(/rock.jpg);
+			font-weight: bold;
+			color: white;
+		}
+
+		#paper {
+
+		}
+
+		#scissors {
+
+		}
+		

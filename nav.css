@@ -60,7 +60,7 @@ nav ul li ul li a {
 }
 
 nav ul li ul li a:hover {
-  background-color: black;
+  background-color: palevioletred;
 }
 /* hamburger method -  */
       @media only screen and (max-width: 640px) {

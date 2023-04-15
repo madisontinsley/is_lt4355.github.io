@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!--
+Title: IS_LT 4355
+Use: ???
+Author: Madison Tinsley
+School/Term: University of Missouri Spring 2023
+Developed: Feb 5 2023
+Tested: Feb 27 2023
+-->
+
+           	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+           	<title>Contact</title>
+               <link rel="stylesheet" href="style.css"/>
+            <link rel="stylesheet" href="contact.css" />
+            <link rel="stylesheet" href="nav.css"/>
+</head>
+<body>
+    <header>
+        <div id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+      <nav>
+        <label id="hamburger">&#9776;</label>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Project</a>
+                <ul id="mobileHide">
+                    <li><a href="1.html">Music</a></li>
+                    <li><a href="2.html">Art</a></li>
+                    <li><a href="3.html">Code</a></li>
+                </ul>
+            </li>
+            <li><a href="reflection.html">Reflection</a></li>
+            <li class="lastMobile"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    
+    <main>
+        <h1>Contact</h1>
+        <form action="mailto:madisontinsley01@gmail.com method="post" enctype="text/plain">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </main>
+            
+
+    </div>
+
+
+
+    </main>
+    <footer>
+        <p>© Madison Tinsley matcfr@umsystem.edu. All rights reserved.</p>
+      </footer>
+</body>
+</html>

@@ -2,7 +2,7 @@
 
   
   body{
-    background-color: #c74a89 ;
+    background-color: #c74a89;;
     font-family: 'Merriweather', serif;
     color: #3E3E3E;
     padding: 10px;
@@ -29,18 +29,7 @@
         }
 
 
-        .artimg {
-            width: 200 px;
-            height: 200 px;
-        }
 
-        @media screen and (min-width: 760px) {
-        img {
-            max-width: 80%;
-            text-align: left;
-            size: ;
-        }
-    }
 
     footer {
         background-image: url("/test.jpg");

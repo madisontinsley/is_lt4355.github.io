@@ -13,29 +13,15 @@
       padding-left: 40px ;
       text-indent: -22px ;
       }
-  img {
-    width: 50%;
-    height: 30%;
 
+img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 50%;
+  height: 50%;
 }
-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(2, auto);
-  grid-gap: 20px;
-  grid-template-areas: 
-    "photo content"
-    "blockquote blockquote";
-}
-
-.photo {
-  grid-area: photo;
-}
-
-.content {
-  grid-area: content;
-}
-    
   @media screen and (max-width: 759px) {
           
       img {
@@ -58,8 +44,3 @@ grid {
                   margin: 5pt 0;
                 }
               }
-.contentbox{
-    display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-}
